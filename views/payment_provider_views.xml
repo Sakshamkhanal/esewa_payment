@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_payment_provider_form_esewa" model="ir.ui.view">
+        <field name="name">payment.provider.esewa.form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='provider_credentials']" position="after">
+                <group string="eSewa Configuration" invisible="code != 'esewa'">
+                    <field name="esewa_merchant_id"/>
+                    <field name="esewa_secret_key" password="True"/>
+                    <!-- Test/Production is driven by the provider State field
+                         (Test Mode toggle) of the base form; this read-only
+                         field simply reflects the resulting environment. -->
+                    <field name="esewa_environment" readonly="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

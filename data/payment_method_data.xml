@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="payment_method_esewa" model="payment.method">
+        <field name="name">eSewa</field>
+        <field name="code">esewa</field>
+        <field name="sequence">1</field>
+        <!-- The website checkout (payment.form_logo) renders the stored related
+             field `image_payment_form`, which is computed from `image`.  The
+             logo must therefore be defined here on the payment METHOD record,
+             not on the payment.provider record (payment.provider has no
+             `image` field in Odoo 19).  `image` is required=True on
+             payment.method, so a fresh install without it would fail. -->
+        <field name="image" type="base64" file="esewa_payment/static/img/esewa-logo.png"/>
+        <field name="support_tokenization">False</field>
+        <field name="support_express_checkout">False</field>
+        <field name="support_manual_capture">none</field>
+        <field name="support_refund">none</field>
+    </record>
+
+</odoo>

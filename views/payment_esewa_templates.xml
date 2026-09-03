@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="payment_esewa_redirect_form">
+        <form method="post" t-att-action="api_url">
+            <input type="hidden" name="amount" t-att-value="amount"/>
+            <input type="hidden" name="tax_amount" t-att-value="tax_amount"/>
+            <input type="hidden" name="total_amount" t-att-value="total_amount"/>
+            <input type="hidden" name="transaction_uuid" t-att-value="txn_uuid"/>
+            <input type="hidden" name="product_code" t-att-value="merchant_id"/>
+            <input type="hidden" name="product_service_charge" t-att-value="product_service_charge"/>
+            <input type="hidden" name="product_delivery_charge" t-att-value="product_delivery_charge"/>
+            <input type="hidden" name="success_url" t-att-value="success_url"/>
+            <input type="hidden" name="failure_url" t-att-value="failure_url"/>
+            <input type="hidden" name="signed_field_names" t-att-value="signed_field_names"/>
+            <input type="hidden" name="signature" t-att-value="signature"/>
+
+            <div class="alert alert-info">
+                <i class="fa fa-info-circle"></i>
+                You will be redirected to eSewa to complete your payment.
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+                Pay with eSewa
+            </button>
+        </form>
+    </template>
+</odoo>
