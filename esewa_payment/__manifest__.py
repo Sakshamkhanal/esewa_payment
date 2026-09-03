@@ -6,35 +6,7 @@
     # The full description lives in README.md, which Odoo 19 loads
     # automatically when the manifest `description` is empty (see
     # odoo/modules/module.py).
-    'description': """
-        <div class="container">
-            <h1>eSewa Payment Gateway</h1>
-            <p>This module integrates the <strong>eSewa</strong> payment gateway with Odoo, allowing you to accept payments via eSewa's ePay v2 API.</p>
-            <p><strong>I have only tested it with test credentials</strong> so I don't if it has bugs in live env.I have left context.md so It'll be easy for your agentic AI to pickup context</p>
-            <h2>Features</h2>
-            <ul>
-                <li>Seamless eSewa payment integration</li>
-                <li>Secure payment processing</li>
-                <li>Automatic transaction status updates</li>
-                <li>Support for multiple currencies</li>
-                <li>Test and live environment support</li>
-            </ul>
-            
-            <h2>Installation</h2>
-            <p>Install this module like any other Odoo module. After installation, configure your eSewa merchant credentials in the payment settings.</p>
-            
-            <h2>Configuration</h2>
-            <p>Go to <strong>Accounting > Configuration > Payment Providers</strong> and select eSewa. Enter your:</p>
-            <ul>
-                <li>Merchant ID</li>
-                <li>Secret Key</li>
-                <li>Environment (Test/Live)</li>
-            </ul>
-            
-            <h2>Support</h2>
-            <p>For any issues, please contact me at saksham.khanal01@gmail.com or visit our <a href="https://github.com/Sakshamkhanal/esewa_payment.git">GitHub repository</a>.</p>
-        </div>
-    """,
+    'description':"",
 
     'author': "Saksham Khanal",
     'website': "https://sakshamkhanal.com.np",
