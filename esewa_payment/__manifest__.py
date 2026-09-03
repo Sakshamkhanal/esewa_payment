@@ -6,10 +6,10 @@
     # The full description lives in README.md, which Odoo 19 loads
     # automatically when the manifest `description` is empty (see
     # odoo/modules/module.py).
-    'description': "",
+    'description': "This esewa payment module that works with demo credentials but not tested with live credentials so check if you're going to use it in live then let me know",
 
-    'author': "Your Name",
-    'website': "https://github.com/your-username/esewa_payment",
+    'author': "Saksham Khanal",
+    'website': "https://sakshamkhanal.com.np",
 
     'category': 'Accounting/Accounting',
     'version': '19.0.1.0.0',
